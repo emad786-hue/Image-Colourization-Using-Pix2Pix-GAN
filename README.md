@@ -20,17 +20,17 @@ For this task I used Comic Style Manga Images, which was collected from the inte
 * Then we define our Discriminator model with an input size of 512x512 and an output (patch size) of 16x16.
       The structure of out Discriminator is as below:
       
-<img src='discriminator_model_plot.png' width=500 />
+<img src='Image-Colourization-Using-Pix2Pix-GAN/discriminator_model_plot.png' width=500 />
       
 * Then we define our Generator model which is a U-Net model, which has an input size of 512x512x1 and an output size of 512x512x2.
       The Structure of out Generator model is a show below:
       
-<img src='generator_model_plot.png' width=500 />
+<img src='Image-Colourization-Using-Pix2Pix-GAN/generator_model_plot.png' width=500 />
       
 * Now we define our GAN model Combining both the discriminator and the generator models.
       Its Structure is as show below:
       
-<img src='gan_model_plot.png' width=500 />
+<img src='Image-Colourization-Using-Pix2Pix-GAN/gan_model_plot.png' width=500 />
       
 * Now I defined some custom fuction of loading the images as input and output as well as to summarize our results and also a custom training function to train our model. For the model instead of taking the grayscale as input and RGB image as output, I converted the RGB image to LAB image and then used the "L" part as input and "AB" part as the ouput of out model.
 
@@ -39,14 +39,14 @@ For this task I used Comic Style Manga Images, which was collected from the inte
 
 ## Results
 
-<img src='Output Images/1.png' width=1000 />
+<img src='Image-Colourization-Using-Pix2Pix-GAN/Output Images/1.png' width=1000 />
 
 
-<img src='Output Images/2.png' width=1000 />
+<img src='Image-Colourization-Using-Pix2Pix-GAN/Output Images/2.png' width=1000 />
 
 
-<img src='Output Images/3.png' width=1000 />
+<img src='Image-Colourization-Using-Pix2Pix-GAN/Output Images/3.png' width=1000 />
 
 
-<img src='Output Images/4.png' width=1000 />
+<img src='Image-Colourization-Using-Pix2Pix-GAN/Output Images/4.png' width=1000 />
 
